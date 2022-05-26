@@ -9,6 +9,10 @@ class GroupExpenseTracker():
         #Initialize Expenses
         self.expenses = []
 
+    #Check if group is created or not
+    def EmptyGroup(self):
+        return self.group == {}
+
     #Defining default Balance when Adding, Modifying or Deleting Expenses
     def DefineBalances(self,member):
         self.balance["balances"][member] = {
@@ -36,10 +40,6 @@ class GroupExpenseTracker():
 
     #Modifying Expenses for Adding or Updating
     def ModifyBalances(self):
-        #Checking if group is created or not
-        if self.group == {}:
-            print('No Group Created')
-            return 0
         #Recursive Function to Simplify Debts
         def Simplify_Recursion(net):
             index_members = dict(zip([x for x in range(len(net))],self.group["members"]))
@@ -89,10 +89,6 @@ class GroupExpenseTracker():
 
     #Add Expenses
     def AddExpenses(self,expense):
-        #Checking if group is created or not
-        if self.group == {}:
-            print('No Group Created')
-            return 0
         self.expenses.append(expense)
         self.CheckNewMembers(expense)
         #ReDefine balances
@@ -104,10 +100,6 @@ class GroupExpenseTracker():
 
     #Update Expenses
     def UpdateExpenses(self,new_expense):
-        #Checking if group is created or not
-        if self.group == {}:
-            print('No Group Created')
-            return 0
         for expense in self.expenses:
             if expense["name"] == new_expense["name"]:
                 expense["items"] = new_expense["items"]
@@ -121,10 +113,6 @@ class GroupExpenseTracker():
 
     #Delete Expenses
     def DeleteExpenses(self,del_expense_name):
-        #Checking if group is created or not
-        if self.group == {}:
-            print('No Group Created')
-            return 0
         for i in range(len(self.expenses)):
             if self.expenses[i]["name"] == del_expense_name:
                 self.expenses.pop(i)
@@ -163,6 +151,9 @@ while True:
         expense_tracker.CreateGroup(name,members_of_group)
     
     if value == 2:
+        if expense_tracker.EmptyGroup():
+            print('No Group Created')
+            continue
         print('''
             Enter Expense in to ADD given format
             Ex :{"name": "Fruits and Milk",
@@ -193,6 +184,9 @@ while True:
         expense_tracker.AddExpenses(add_expense)
     
     if value == 3:
+        if expense_tracker.EmptyGroup():
+            print('No Group Created')
+            continue
         print('''
             Enter Expense in to UPDATE given format
             Ex :{"name": "Fruits and Milk",
@@ -226,6 +220,9 @@ while True:
         expense_tracker.UpdateExpenses(update_expense)
     
     if value == 4:
+        if expense_tracker.EmptyGroup():
+            print('No Group Created')
+            continue
         name_expense = input('Enter Name of expense: ')
         if not expense_tracker.CheckExpense(name_expense):
             print('Expense not found ! Please Try Again.')
