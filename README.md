@@ -29,19 +29,28 @@ Project is created with:
   Note : After entering every required field, you  will be shown the above options.
 
 4. To create new group, Select 1. You will be asked to enter Name and Members of group. Enter these in given format.
-  
+  ```
   Enter Name of Group: Home
   Enter Members of Group (Give Space for Every New Member): A B 
+  ```
 
-5. To add expenses to group, Select 2. You will be asked to enter Name and Members of group. Enter these in given format.
+5. To add expenses to group, Select 2. You will be asked to enter Name and Members of group. Enter these in given example format.
   ```
-  Enter Name of expense: `Fruits and Milk`
+  Enter Name of expense: Fruits and Milk
   Items
-  Name: `milk`
-  Value: '50'
-  Paid_by: `[{"A": 40, "B": 10}]`
-  Owed_by: `[{"A": 20,"B": 20, "C": 10}]`
+  Name: milk
+  Value: 50
+  Paid_by: [{"A": 40, "B": 10}]
+  Owed_by: [{"A": 20,"B": 20, "C": 10}]
   
   ```
-  
+6. After that, you will be asked whether to add more items. Select 1 for YES and 2 for NO.
+  --> if YES, you will be asked to enter the items as given example fromat.
+  ```
+  Name: milk
+  Value: 50
+  Paid_by: [{"A": 40, "B": 10}]
+  Owed_by: [{"A": 20,"B": 20, "C": 10}]
+  ```
+  --> 
 
