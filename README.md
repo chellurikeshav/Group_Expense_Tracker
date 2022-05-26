@@ -17,7 +17,7 @@ Project is created with:
 1. To run this project, make sure you installed python3 in your computer.If not installed, install from [Python](https://www.python.org/downloads/)
 2. Run the group_expense_tracker.py file
 3. You will see the option
-   
+  ''' 
   Select:
             1. Create Group
             2. Add Expenses to Group
@@ -25,7 +25,7 @@ Project is created with:
             4. Delete Expenses
             5. Get Balance
             6. Exit
-      
+  '''  
   Note : After entering every required field, you  will be shown the above options.
 
 4. To create new group, Select 1. You will be asked to enter Name and Members of group. Enter these in given format.
