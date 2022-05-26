@@ -34,12 +34,14 @@ Project is created with:
   Enter Members of Group (Give Space for Every New Member): A B 
 
 5. To add expenses to group, Select 2. You will be asked to enter Name and Members of group. Enter these in given format.
-  
-  Enter Name of expense: 'Fruits and Milk'
+  ```
+  Enter Name of expense: `Fruits and Milk`
   Items
-  Name: 'milk'
+  Name: `milk`
   Value: '50'
-  Paid_by: '[{"A": 40, "B": 10}]'
-  Owed_by: '[{"A": 20,"B": 20, "C": 10}]' 
-
+  Paid_by: `[{"A": 40, "B": 10}]`
+  Owed_by: `[{"A": 20,"B": 20, "C": 10}]`
+  
+  ```
+  
 
