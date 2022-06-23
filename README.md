@@ -9,7 +9,7 @@ The goal of this project is to create a simple expense tracker in which a group 
 1. Ability to create a group
 	
 	```
-	{
+		{
           "name": "Home",
           "members": ["A","B"]
         }
