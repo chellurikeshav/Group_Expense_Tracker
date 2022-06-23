@@ -57,11 +57,11 @@ The goal of this project is to create a simple expense tracker in which a group 
 
 ## Project Implementation Details -
 
-1. Keep everything in memory. No need to use a database.
-2. Create REST API for all the 5 features
-3. The code should be clean and object oriented.
-4. The system should be consistent always. If multiple people are trying to edit the same bill at the same time, we should take the edits one at at a time and the latest update should be applied. 
-	For example - If inital expense is of Rs 100, and A is trying to update the bill to Rs 120, B is trying to update the bill to Rs 80, the system should apply updates sequencially and the balances should be consistent. [Hint - think about locking mechanisms to apply]
+1. Kept everything in memory. Not used any database.
+2. Created REST API for all the 5 features
+3. The code is clean and object oriented.
+4. The system is consistent always. If multiple people are trying to edit the same bill at the same time, it take the edits one at at a time and the latest update should be applied. 
+	For example - If inital expense is of Rs 100, and A is trying to update the bill to Rs 120, B is trying to update the bill to Rs 80, the system should apply updates sequencially and the balances should be consistent.
 
 
 ## --------------------------------------------------------------------------------------------------------
