@@ -106,7 +106,7 @@ python manage.py runserver
 
 5. Now, Open Postman and select the bottom right cornor icon for better view and click on 'Body' and select **raw** **JSON**. 
 
-![image](https://user-images.githubusercontent.com/83489527/171014376-988fb197-7e49-4876-a6aa-4507e612d442.jpg)
+![video_image-S4vD713DpZ](https://user-images.githubusercontent.com/83489527/175374385-4d78eefa-0d32-4f51-8391-6ae791a1acd8.jpeg)
 
 6. Now,
 
