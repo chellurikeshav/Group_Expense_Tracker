@@ -9,10 +9,10 @@ The goal of this project is to create a simple expense tracker in which a group 
 1. Ability to create a group
 	
 	```
-		{
+    {
           "name": "Home",
           "members": ["A","B"]
-        }
+    }
 	```
 	- Each group should have a name and list of members
 	- Whenever an expense is added within a group, the members of the expense who are not part of the group should automatically be added as a member.
