@@ -1,8 +1,10 @@
 # Group_Expense_Tracker
+
+## Project Statement
 The goal of this project is to create a simple expense tracker in which a group of people can manage their expenses and get a summary of their balance.
 
 
-## Features - 
+## Project Features - 
 
 1. Ability to create a group
 	- Each group should have a name and list of members
@@ -71,7 +73,7 @@ The goal of this project is to create a simple expense tracker in which a group 
 - Should be scalable - Adding new features should be easy and system remains consistent if alot of people are using at the same time.
 
 
-
+## -------------------------------------------------------------------------------------------------------------------
 
 ## Table of contents
 * [General info](#general-info)
