@@ -10,7 +10,7 @@ The goal of this project is to create a simple expense tracker in which a group 
 	```
 	{
           "name": "Home",
-          "members": ['A','B']
+          "members": ["A","B"]
         }
 	```
 	- Each group should have a name and list of members
